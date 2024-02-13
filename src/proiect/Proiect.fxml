@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proiect.ProiectController">
+	<children>
+		<TabPane prefHeight="580.0" prefWidth="955.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab fx:id="tab_Abonati" text="Abonati">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="461.0">
+							<children>
+								<TableView fx:id="tabela_Abonati" layoutX="17.0" layoutY="62.0" prefHeight="444.0" prefWidth="919.0">
+									<columns>
+										<TableColumn fx:id="atribut_idAbonat" prefWidth="74.0" text="idAbonat" />
+										<TableColumn fx:id="atribut_NumeA" prefWidth="187.0" text="Nume" />
+										<TableColumn fx:id="atribut_PrenumeA" prefWidth="237.0" text="Prenume" />
+                              			<TableColumn fx:id="atribut_CNPA" prefWidth="156.0" text="CNP" />
+                              			<TableColumn fx:id="atribut_AdresaA" prefWidth="269.0" text="Adresa" />
+									</columns>
+								</TableView>
+								<Button fx:id="buton_IncarcareAbonati" layoutX="477.0" layoutY="512.0" mnemonicParsing="false" onAction="#incarcaAbonati" text="Incarcare abonati" AnchorPane.leftAnchor="467.0" />
+								<Label layoutX="20.0" layoutY="32.0" text="Datele din tabela abonati">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <Button layoutX="323.0" layoutY="511.0" mnemonicParsing="false" onAction="#startAdaugaAbonat" prefHeight="26.0" prefWidth="114.0" text="Adauga abonat" AnchorPane.leftAnchor="317.0" />
+                        <Button layoutX="167.0" layoutY="511.0" mnemonicParsing="false" onAction="#stergeAbonat" prefHeight="26.0" prefWidth="114.0" text="Sterge abonat" AnchorPane.leftAnchor="167.0" />
+                        <Button layoutX="17.0" layoutY="511.0" mnemonicParsing="false" onAction="#startModificaAbonat" prefHeight="26.0" prefWidth="114.0" text="Modifica abonat" AnchorPane.leftAnchor="17.0" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="tab_CompaniiTelefonie" text="Companii telefonie">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="354.0">
+							<children>
+								<Button fx:id="buton_IncarcareCompaniiTelefonie" layoutX="444.0" layoutY="512.0" mnemonicParsing="false" onAction="#incarcaCompaniiTelefonie" text="Incarcare companii" AnchorPane.leftAnchor="467.0" />
+								<Label layoutX="17.0" layoutY="34.0" text="Datele din tabela companii telefonie">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+								<TableView fx:id="tabela_CompaniiTelefonie" layoutX="16.0" layoutY="64.0" prefHeight="432.0" prefWidth="917.0">
+									<columns>
+										<TableColumn fx:id="atribut_idCompanieTelefonieC" prefWidth="95.33331298828125" text="idCompanieTelefonie" />
+										<TableColumn fx:id="atribut_numeC" prefWidth="158.0" text="Nume" />
+										<TableColumn fx:id="atribut_adresaSediuC" prefWidth="306.0" text="Adresa sediu" />
+										<TableColumn fx:id="atribut_telefonContactC" minWidth="0.0" prefWidth="164.0" text="Telefon contact" />
+										<TableColumn fx:id="atribut_emailContactC" minWidth="0.0" prefWidth="196.0" text="E-mail contact" />
+									</columns>
+								</TableView>
+                        <Button layoutX="292.0" layoutY="512.0" mnemonicParsing="false" onAction="#startAdaugaCompanieTelefonie" prefHeight="23.0" prefWidth="117.0" text="Adauga companie" AnchorPane.leftAnchor="317.0" />
+                        <Button layoutX="149.0" layoutY="512.0" mnemonicParsing="false" onAction="#stergeCompanieTelefonie" prefHeight="21.0" prefWidth="118.0" text="Sterge companie" AnchorPane.leftAnchor="167.0" />
+                        <Button layoutX="16.0" layoutY="512.0" mnemonicParsing="false" onAction="#startModificaCompanieTelefonie" prefHeight="22.0" prefWidth="111.0" text="Modifica companie" AnchorPane.leftAnchor="17.0" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="tab_Abonamente" text="Abonamente">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="buton_IncarcareAbonamente" layoutX="478.0" layoutY="512.0" mnemonicParsing="false" onAction="#incarcaAbonamente" text="Incarcare abonamente" AnchorPane.leftAnchor="467.0" />
+                        <Label layoutX="20.0" layoutY="32.0" text="Datele din tabela abonamente">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <TableView fx:id="tabela_Abonamente" layoutX="20.0" layoutY="62.0" prefHeight="440.0" prefWidth="922.0">
+                           <columns>
+                              <TableColumn fx:id="atribut_idAbonament" prefWidth="63.0" text="idAbonamente" />
+                              <TableColumn fx:id="atribut_idAbonatAbonamente" prefWidth="59.0" text="idAbonat" />
+                              <TableColumn fx:id="atribut_idCompanieTelefonieAbonamente" minWidth="0.0" prefWidth="66.0" text="idCompanieTelefonie" />
+                              <TableColumn fx:id="atribut_NumeAbonamente" prefWidth="74.0" text="Nume" />
+                              <TableColumn fx:id="atribut_PrenumeAbonamente" prefWidth="72.0" text="Prenume" />
+                              <TableColumn fx:id="atribut_CnpAbonamente" prefWidth="91.0" text="CNP" />
+                              <TableColumn fx:id="atribut_AdresaAbonamente" prefWidth="129.0" text="Adresa" />
+                              <TableColumn fx:id="atribut_DenumireCompanieAbonamente" prefWidth="107.33331298828125" text="Denumire companie" />
+                              <TableColumn fx:id="atribut_AdresaSediuAbonamente" prefWidth="114.0" text="Adresa sediu" />
+                              <TableColumn fx:id="atribut_TelefonContactAbonamente" minWidth="0.0" prefWidth="154.666748046875" text="Telefon companie" />
+                              <TableColumn fx:id="atribut_emailContactAbonamente" minWidth="0.0" prefWidth="154.666748046875" text="E-mail companie" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="317.0" layoutY="512.0" mnemonicParsing="false" onAction="#startAdaugaAbonament" prefHeight="21.0" prefWidth="123.0" text="Adauga abonament" AnchorPane.leftAnchor="317.0" />
+                        <Button layoutX="164.0" layoutY="512.0" mnemonicParsing="false" onAction="#stergeAbonament" prefHeight="21.0" prefWidth="123.0" text="Sterge abonament" AnchorPane.leftAnchor="167.0" />
+                        <Button layoutX="20.0" layoutY="512.0" mnemonicParsing="false" onAction="#startModificaAbonament" prefHeight="25.0" prefWidth="123.0" text="Modifica abonament" AnchorPane.leftAnchor="17.0" />
+                     </children></AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>
