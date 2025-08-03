@@ -7,8 +7,9 @@ This project is a JavaFX-based application that performs CRUD (Create, Read, Upd
 
 ![gui-1](https://github.com/user-attachments/assets/d2278ea7-4fa8-44f8-bc63-d108c9714532)
 
-![gui-2](https://github.com/user-attachments/assets/410c389a-d1b4-4b20-8055-de2981dae1c6)
-
+<p align="center">
+  ![gui-2](https://github.com/user-attachments/assets/410c389a-d1b4-4b20-8055-de2981dae1c6)
+</p>
 
 ## Features
 
