@@ -4,11 +4,12 @@
 
 This project is a JavaFX-based application that performs CRUD (Create, Read, Update, Delete) operations on a MySQL database. The app manages a database with a Many-to-Many (M:N) relationship between two main tables: `abonati` (subscribers) and `companii_telefonie` (telecommunication companies), connected through an intermediate table `abonamente` (subscriptions).
 
-
-![gui-1](https://github.com/user-attachments/assets/d2278ea7-4fa8-44f8-bc63-d108c9714532)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d2278ea7-4fa8-44f8-bc63-d108c9714532" alt="gui-1" />
+</p>
 
 <p align="center">
-  ![gui-2](https://github.com/user-attachments/assets/410c389a-d1b4-4b20-8055-de2981dae1c6)
+  <img src="https://github.com/user-attachments/assets/410c389a-d1b4-4b20-8055-de2981dae1c6" alt="gui-2" />
 </p>
 
 ## Features
